@@ -1209,3 +1209,7 @@ memcache_secret_key = <%= node['openstack']['block-storage']['api']['auth']['mem
 # (list value)
 #hash_algorithms=md5
 hash_algorithms = <%= node['openstack']['block-storage']['api']['auth']['hash_algorithms'] %>
+
+# iser_ip_address is required to do a discovery over IB/RoCE
+# interface from the initiator side.
+iser_ip_address=<%= node["openstack"]["block-storage"]["iser"]["ip_address"] %>
