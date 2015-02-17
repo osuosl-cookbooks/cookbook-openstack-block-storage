@@ -181,6 +181,9 @@ default['openstack']['block-storage']['gpfs']['gpfs_sparse_volumes'] = true
 default['openstack']['block-storage']['gpfs']['gpfs_max_clone_depth'] = 8
 default['openstack']['block-storage']['gpfs']['gpfs_storage_pool'] = 'system'
 
+# Mellanox ISER Support
+default['openstack']['block-storage']['mellanox']['iser_ip'] = '127.0.0.1'
+
 # IBMNAS (SONAS, Storwize V7000 Unified) Support
 # The attribute "nas_password" is stored in databag and
 # accessed with openstack-common cookbook library's "get_password" routeine.
